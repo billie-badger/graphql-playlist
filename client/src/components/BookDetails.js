@@ -21,7 +21,7 @@ class BookDetails extends Component {
       )
     } else {
       return (
-        <div>No book selected...</div>
+        <div>Please select a book...</div>
       )
     }
   }
