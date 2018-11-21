@@ -1,5 +1,98 @@
 body {
-  background: #333;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #ddd;
+  color: #333;
+  font-size: 16pt;
+}
+
+#main h1{
+  text-align: center;
+}
+
+#main {
+  padding: 0px;
+  box-sizing: border-box;
+  width: 60%;
+  height: 100%;
+}
+
+#book-list {
+  padding: 0px;
+  width: 90%;
+}
+
+#book-list li {
+  display: inline-block;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+  color: #333;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#book-list li:hover {
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
+}
+
+form {
+  background: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.3);
+}
+
+form .field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+form label {
+  text-align: right;
+  padding: 6px;
+}
+
+form select, form input {
+  margin: 4px;
+  padding: 6px;
+  box-sizing: border-box;
+  background: white;
+}
+
+form button {
+  color: white;
+  font-size: 2em;
+  background: rgb(238, 51, 91);
+  border: 0;
+  padding: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+
+
+#book-details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: rgb(238, 51, 91);
+  padding: 30px;
+  overflow: auto;
+  box-shadow: -2px -3px 10px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  color: white;
+  
+}
+
+#book-details h2 {
+  font-size: 42pt;
 }
